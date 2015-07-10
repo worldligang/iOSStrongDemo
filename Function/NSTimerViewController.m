@@ -1,32 +1,29 @@
 //
-//  ViewController.m
+//  NSTimerViewController.m
 //  iOSStrongDemo
 //
-//  Created by apple on 15/7/9.
+//  Created by apple on 15/7/10.
 //  Copyright (c) 2015年 LiGang. All rights reserved.
 //
-//  iOS开发技术网站：http://www.superqq.com/
-//  iOS开发微信公众号：iOSDevTip
 
-#import "ViewController.h"
-#import "UIWebViewViewController.h"
-#import "UIDataDetectorTypesViewController.h"
 #import "NSTimerViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface NSTimerViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *mutArray;
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, assign) int number;
 
 @end
 
-@implementation ViewController
+@implementation NSTimerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"公众号iOS开发：iOSDevTip",@"www.superqq.com",@"公众号iOS开发：iOSDevTip",@"www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -35,6 +32,26 @@
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
+    self.number = 0;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, SCREEN.width - 100, 50)];
+    label.text = [NSString stringWithFormat:@"%d",self.number];
+    label.backgroundColor = [UIColor purpleColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    self.label = label;
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(actionTimer:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+}
+
+- (void)actionTimer:(NSTimer *)timer
+{
+    self.number++;
+    self.label.text = [NSString stringWithFormat:@"%d",self.number];
+    NSLog(@"%d",self.number);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,17 +91,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *value = self.mutArray[indexPath.row];
-    if ([value isEqualToString:@"UIWebView"]) {
-        UIWebViewViewController *vc = [[UIWebViewViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if ([value isEqualToString:@"UIDataDetectorTypes"]){
-        UIDataDetectorTypesViewController *vc = [[UIDataDetectorTypesViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if ([value isEqualToString:@"NSTimer"]){
-        NSTimerViewController *vc = [[NSTimerViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+   
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

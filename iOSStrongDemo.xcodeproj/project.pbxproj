@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */; };
 		CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */; };
 		CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77E81B4EC18C0075C1F2 /* main.m */; };
 		CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77EB1B4EC18C0075C1F2 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1A2C3B1B5004E8006F901C /* NSTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		CE2A58371B4ECB3100B15630 /* UIDataDetectorTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataDetectorTypesViewController.h; sourceTree = "<group>"; };
 		CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDataDetectorTypesViewController.m; sourceTree = "<group>"; };
 		CEFF77E31B4EC18C0075C1F2 /* iOSStrongDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStrongDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1A2C3A1B5004D2006F901C /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CE1A2C3B1B5004E8006F901C /* NSTimerViewController.h */,
+				CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */,
+			);
+			name = NSTimer;
+			sourceTree = "<group>";
+		};
 		CEFF77DA1B4EC18C0075C1F2 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CE1A2C3A1B5004D2006F901C /* NSTimer */,
 				CEFF78231B4EC5AC0075C1F2 /* UIDataDetectorTypes */,
 				CEFF78221B4EC5810075C1F2 /* UIWebView */,
 			);
@@ -300,6 +313,7 @@
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
 				CEFF78211B4EC5790075C1F2 /* UIWebViewViewController.m in Sources */,
+				CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */,
 				CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */,
 				CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */,
 			);
