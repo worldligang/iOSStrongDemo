@@ -12,6 +12,7 @@
 #import "UIWebViewViewController.h"
 #import "UIDataDetectorTypesViewController.h"
 #import "NSTimerViewController.h"
+#import "NSStringViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -83,6 +84,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([value isEqualToString:@"NSTimer"]){
         NSTimerViewController *vc = [[NSTimerViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([value isEqualToString:@"NSString"]){
+        NSStringViewController *vc = [[NSStringViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

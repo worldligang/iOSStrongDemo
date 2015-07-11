@@ -17,38 +17,22 @@
             endingLineNumber = "52"
             landmarkName = "-actionTimer:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NSTimerViewController actionTimer:]"
-                  moduleName = "iOSStrongDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ligang/blog/File/Demo/iOSStrongDemo/Function/NSTimerViewController.m"
-                  timestampString = "458231219.793596"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[NSTimerViewController actionTimer:]_block_invoke"
-                  moduleName = "iOSStrongDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ligang/blog/File/Demo/iOSStrongDemo/Function/NSTimerViewController.m"
-                  timestampString = "458231219.793966"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Function/NSStringViewController.m"
+            timestampString = "458319936.142976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
