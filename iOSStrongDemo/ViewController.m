@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -35,7 +35,7 @@
     tableView.delegate = self;
     [self.view addSubview:tableView];
     self.tableView = tableView;
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,6 +88,11 @@
     } else if ([value isEqualToString:@"NSString"]){
         NSStringViewController *vc = [[NSStringViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if ([value isEqualToString:@"System Setting"]){
+        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+            [[UIApplication sharedApplication] openURL:url];
+        }
     }
 }
 
