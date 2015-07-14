@@ -34,5 +34,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.iOSStrongDemo.www</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>iOSDevTip</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
