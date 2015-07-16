@@ -67,13 +67,60 @@
     
     
     
-    NSString *string1 = @"This is a iOSDevTip";
-    NSString *string2 = @"iOSDevTip";
-    NSRange range = [string1 rangeOfString:string2];
-    NSInteger location = range.location;
-    NSInteger leight = range.length;
-    NSString *logString = [[NSString alloc] initWithString:[NSString stringWithFormat:@"Location:%ld,Leight:%ld",location,leight]];
-    NSLog(@"astring:%@",logString);
+//    NSString *string1 = @"This is a iOSDevTip";
+//    NSString *string2 = @"iOSDevTip";
+//    NSRange range = [string1 rangeOfString:string2];
+//    NSInteger location = range.location;
+//    NSInteger leight = range.length;
+//    NSString *logString = [[NSString alloc] initWithString:[NSString stringWithFormat:@"Location:%ld,Leight:%ld",location,leight]];
+//    NSLog(@"astring:%@",logString);
+    
+//    //分割字符串
+//    NSString *string = @"This is a iOSDevTip";
+//    NSArray *array = [string componentsSeparatedByString:@"a"];
+//    NSString *string1 = [array objectAtIndex:0];
+//    NSString *string2 = [array objectAtIndex:1];
+//    NSLog(@"string1:%@  string2:%@",string1,string2);
+    
+    
+  
+    
+//    //追加字符串
+//    NSMutableString *string = [[NSMutableString alloc] initWithString:@"I Love "];
+//    [string appendString:@"China"];
+//    NSLog(@"string:%@",string);
+
+//    //插入字符串
+//    NSMutableString *string = [[NSMutableString alloc] initWithString:@"I China"];
+//    [string insertString:@"Love " atIndex:2];
+//    NSLog(@"string: %@",string);
+
+//    //删除字符串
+//    NSMutableString *string = [[NSMutableString alloc] initWithString:@"I love China"];
+//    [string deleteCharactersInRange:NSMakeRange(2, 4)];
+//    NSLog(@"String1: %@",string);
+    
+//    //判断是否包含前后缀
+//    NSString *string = @"I love China";
+//    BOOL isHasI = [string hasPrefix:@"I"];
+//    BOOL isHasChina = [string hasSuffix:@"China"];
+
+//    //替换字符串
+//    NSString *string = @"I love China";
+//    NSString *replaceString = [string stringByReplacingOccurrencesOfString:@"love" withString:@"like"];
+//    NSLog(@"replaceString:  %@",replaceString);
+    
+//    //去除字符串首尾的空格和换行符
+//    NSString *string = @" I love China ";
+//    NSString *text = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+//    NSLog(@"text:%@",text);
+    
+    
+    //首字母大写
+    NSString *string = @"ligang";
+    NSLog(@"string: %@",[string capitalizedString]);
+
+    
     
 }
 
