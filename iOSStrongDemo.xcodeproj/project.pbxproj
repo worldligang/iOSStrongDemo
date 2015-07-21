@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */; };
 		CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */; };
 		CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */; };
 		CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1679A1B5120320088F8A3 /* NSStringViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE04503B1B5EAC470031899F /* GGSandBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSandBoxViewController.h; sourceTree = "<group>"; };
+		CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSandBoxViewController.m; sourceTree = "<group>"; };
 		CE1A2C3B1B5004E8006F901C /* NSTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		CE2A58371B4ECB3100B15630 /* UIDataDetectorTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataDetectorTypesViewController.h; sourceTree = "<group>"; };
@@ -86,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE04503A1B5EABCB0031899F /* SandBox */ = {
+			isa = PBXGroup;
+			children = (
+				CE04503B1B5EAC470031899F /* GGSandBoxViewController.h */,
+				CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */,
+			);
+			name = SandBox;
+			sourceTree = "<group>";
+		};
 		CE1A2C3A1B5004D2006F901C /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +202,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CE04503A1B5EABCB0031899F /* SandBox */,
 				CEC1679C1B51203A0088F8A3 /* NSString */,
 				CE1A2C3A1B5004D2006F901C /* NSTimer */,
 				CEFF78231B4EC5AC0075C1F2 /* UIDataDetectorTypes */,
@@ -265,6 +278,7 @@
 				TargetAttributes = {
 					CEFF77E21B4EC18C0075C1F2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UBTY9MG2K7;
 					};
 					CEFF77FB1B4EC18C0075C1F2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -323,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */,
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
@@ -447,10 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSStrongDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -458,10 +476,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSStrongDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

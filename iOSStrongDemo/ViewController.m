@@ -13,6 +13,7 @@
 #import "UIDataDetectorTypesViewController.h"
 #import "NSTimerViewController.h"
 #import "NSStringViewController.h"
+#import "GGSandBoxViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -27,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",@"SandBox",nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -94,7 +95,11 @@
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
+    }else if ([value isEqualToString:@"SandBox"]){
+        GGSandBoxViewController *vc = [[GGSandBoxViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
