@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+
 //    //沙盒根目录
 //    NSString *directory = NSHomeDirectory();
 //    NSLog(@"directory:%@", directory);

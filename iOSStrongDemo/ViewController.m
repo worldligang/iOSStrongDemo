@@ -14,6 +14,7 @@
 #import "NSTimerViewController.h"
 #import "NSStringViewController.h"
 #import "GGSandBoxViewController.h"
+#import "GGCropImageViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -28,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",@"SandBox",nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",@"SandBox",@"CropImage", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -90,13 +91,16 @@
     } else if ([value isEqualToString:@"NSString"]){
         NSStringViewController *vc = [[NSStringViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if ([value isEqualToString:@"System Setting"]){
+    } else if ([value isEqualToString:@"System Setting"]){
         NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
-    }else if ([value isEqualToString:@"SandBox"]){
+    } else if ([value isEqualToString:@"SandBox"]){
         GGSandBoxViewController *vc = [[GGSandBoxViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([value isEqualToString:@"CropImage"]){
+        GGCropImageViewController *vc = [[GGCropImageViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     
