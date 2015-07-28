@@ -15,6 +15,7 @@
 #import "NSStringViewController.h"
 #import "GGSandBoxViewController.h"
 #import "GGCropImageViewController.h"
+#import "GGImageViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UIWebView",@"UIDataDetectorTypes",@"NSTimer",@"NSString", @"System Setting",@"SandBox",@"CropImage", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -101,6 +102,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([value isEqualToString:@"CropImage"]){
         GGCropImageViewController *vc = [[GGCropImageViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([value isEqualToString:@"UIImage"]){
+        GGImageViewController *vc = [[GGImageViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

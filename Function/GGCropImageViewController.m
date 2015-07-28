@@ -8,13 +8,13 @@
 
 #import "GGCropImageViewController.h"
 #import "UIImage+Crop.h"
-#import "XYAutoSimplingShowView.h"
+#import "GGAutoSimplingShowView.h"
 #define SCREEN [UIScreen mainScreen].bounds.size
 
 @interface GGCropImageViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *mutArray;
-@property (nonatomic, strong) XYAutoSimplingShowView *showView;
+@property (nonatomic, strong) GGAutoSimplingShowView *showView;
 @property (nonatomic, assign) XYSimplingStyle style;
 
 @end
@@ -72,6 +72,8 @@
     self.tableView = tableView;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
+    UIImage *img = [UIImage imageNamed:@"some.png"];
+    NSData *dataObj = UIImageJPEGRepresentation(img, 1.0);
 }
 
 - (void)actionClick:(UIButton *)button
@@ -113,7 +115,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     cell.backgroundColor = [UIColor blackColor];
-    XYAutoSimplingShowView *showView = [[XYAutoSimplingShowView alloc] init];
+    GGAutoSimplingShowView *showView = [[GGAutoSimplingShowView alloc] init];
     showView.frame = CGRectMake(0, 0, SCREEN.width, SCREEN.width/4*3);
     showView.backgroundColor = [UIColor orangeColor];
     showView.imageArray = self.mutArray;

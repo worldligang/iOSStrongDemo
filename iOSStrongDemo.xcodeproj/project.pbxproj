@@ -10,10 +10,11 @@
 		CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */; };
 		CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */; };
 		CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */; };
-		CE4859D11B65D2630096C1F1 /* XYAutoSimplingShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4859D01B65D2630096C1F1 /* XYAutoSimplingShowView.m */; };
+		CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */; };
 		CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */; };
 		CE502E2C1B623C50006D19D1 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */; };
 		CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1679A1B5120320088F8A3 /* NSStringViewController.m */; };
+		CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */; };
 		CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77E81B4EC18C0075C1F2 /* main.m */; };
 		CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77EB1B4EC18C0075C1F2 /* AppDelegate.m */; };
 		CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77EE1B4EC18C0075C1F2 /* ViewController.m */; };
@@ -48,14 +49,16 @@
 		CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		CE2A58371B4ECB3100B15630 /* UIDataDetectorTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataDetectorTypesViewController.h; sourceTree = "<group>"; };
 		CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDataDetectorTypesViewController.m; sourceTree = "<group>"; };
-		CE4859CF1B65D2630096C1F1 /* XYAutoSimplingShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAutoSimplingShowView.h; sourceTree = "<group>"; };
-		CE4859D01B65D2630096C1F1 /* XYAutoSimplingShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAutoSimplingShowView.m; sourceTree = "<group>"; };
+		CE4859CF1B65D2630096C1F1 /* GGAutoSimplingShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAutoSimplingShowView.h; sourceTree = "<group>"; };
+		CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAutoSimplingShowView.m; sourceTree = "<group>"; };
 		CE502E271B623B6E006D19D1 /* GGCropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCropImageViewController.h; sourceTree = "<group>"; };
 		CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCropImageViewController.m; sourceTree = "<group>"; };
 		CE502E2A1B623C50006D19D1 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
 		CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		CEC167991B5120320088F8A3 /* NSStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
 		CEC1679A1B5120320088F8A3 /* NSStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
+		CEFD4B511B67BD4D00402B1A /* GGImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGImageViewController.h; sourceTree = "<group>"; };
+		CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGImageViewController.m; sourceTree = "<group>"; };
 		CEFF77E31B4EC18C0075C1F2 /* iOSStrongDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStrongDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFF77E71B4EC18C0075C1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEFF77E81B4EC18C0075C1F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,8 +124,8 @@
 			children = (
 				CE502E271B623B6E006D19D1 /* GGCropImageViewController.h */,
 				CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */,
-				CE4859CF1B65D2630096C1F1 /* XYAutoSimplingShowView.h */,
-				CE4859D01B65D2630096C1F1 /* XYAutoSimplingShowView.m */,
+				CE4859CF1B65D2630096C1F1 /* GGAutoSimplingShowView.h */,
+				CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */,
 				CE502E2A1B623C50006D19D1 /* UIImage+Crop.h */,
 				CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */,
 			);
@@ -136,6 +139,15 @@
 				CEC1679A1B5120320088F8A3 /* NSStringViewController.m */,
 			);
 			name = NSString;
+			sourceTree = "<group>";
+		};
+		CEFD4B501B67BCBC00402B1A /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD4B511B67BD4D00402B1A /* GGImageViewController.h */,
+				CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		CEFF77DA1B4EC18C0075C1F2 = {
@@ -224,6 +236,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CEFD4B501B67BCBC00402B1A /* UIImage */,
 				CE502E261B623B3E006D19D1 /* CropImage */,
 				CE04503A1B5EABCB0031899F /* SandBox */,
 				CEC1679C1B51203A0088F8A3 /* NSString */,
@@ -362,9 +375,10 @@
 			files = (
 				CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */,
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
+				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
 				CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
-				CE4859D11B65D2630096C1F1 /* XYAutoSimplingShowView.m in Sources */,
+				CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */,
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
 				CEFF78211B4EC5790075C1F2 /* UIWebViewViewController.m in Sources */,
 				CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */,

@@ -1,16 +1,16 @@
-     //
-//  XYAutoSimplingShowView.m
+//
+//  GGAutoSimplingShowView.m
 //  AntsSportApp
 //
 //  Created by ligang on 15/7/22.
-//  Copyright (c) 2015年 Xiaoyi. All rights reserved.
+//  Copyright (c) 2015年 LiGang. All rights reserved.
 //
 
-#import "XYAutoSimplingShowView.h"
+#import "GGAutoSimplingShowView.h"
 #import "UIImage+Crop.h"
 #define SCREEN [UIScreen mainScreen].bounds.size
 
-@implementation XYAutoSimplingShowView
+@implementation GGAutoSimplingShowView
 
 - (id)init
 {

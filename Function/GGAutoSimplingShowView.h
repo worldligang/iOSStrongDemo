@@ -1,14 +1,14 @@
 //
-//  XYAutoSimplingShowView.h
+//  GGAutoSimplingShowView.h
 //  AntsSportApp
 //
 //  Created by ligang on 15/7/22.
-//  Copyright (c) 2015年 Xiaoyi. All rights reserved.
+//  Copyright (c) 2015年 LiGang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface XYAutoSimplingShowView : UIView
+@interface GGAutoSimplingShowView : UIView
 
 typedef NS_ENUM(NSInteger, XYSimplingStyle){
     XYSimplingStyleOriginal                     =0,      // 一张图

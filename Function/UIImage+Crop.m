@@ -3,7 +3,7 @@
 //  AntsSportApp
 //
 //  Created by ligang on 15/7/24.
-//  Copyright (c) 2015年 Xiaoyi. All rights reserved.
+//  Copyright (c) 2015年 LiGang. All rights reserved.
 //
 
 #import "UIImage+Crop.h"
