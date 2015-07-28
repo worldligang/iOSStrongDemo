@@ -11,11 +11,13 @@
 @interface XYAutoSimplingShowView : UIView
 
 typedef NS_ENUM(NSInteger, XYSimplingStyle){
-    XYSimplingStyleLeftAndRight                 =0,      // 一半左边，一半右边
-    XYSimplingStyleTwoCenter                    =1,      // 两半中间
-    XYSimplingStyleLeftCenterAndRight           =2,      // 三分之一左边，三分之一中间，三分之一右边
-    XYSimplingStyleThreeCenter                  =3,      // 三个三分之一中间
-    XYSimplingStyleQuarterLeftCenterAndRight    =4,      // 四分之一左边，四分之一左边中间，四分之一右边中间，四分之一右边
+    XYSimplingStyleOriginal                     =0,      // 一张图
+    XYSimplingStyleLeftAndRight                 =1,      // 一半左边，一半右边
+    XYSimplingStyleTwoCenter                    =2,      // 两半中间
+    XYSimplingStyleLeftCenterAndRight           =3,      // 三分之一左边，三分之一中间，三分之一右边
+    XYSimplingStyleThreeCenter                  =4,      // 三个三分之一中间
+    XYSimplingStyleQuarterLeftCenterAndRight    =5,      // 四分之一左边，四分之一左边中间，四分之一右边中间，四分之一右边
+    XYSimplingStyleQuarterFourGeometricZoom     =6,      // 四张图等比缩放
 };
 
 @property (nonatomic, strong) NSArray *imageArray;

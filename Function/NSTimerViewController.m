@@ -25,7 +25,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.mutArray = [NSMutableArray arrayWithObjects:@"公众号iOS开发：iOSDevTip",@"www.superqq.com",@"公众号iOS开发：iOSDevTip",@"www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip",@"刚刚在线博客：www.superqq.com",@"公众号iOS开发：iOSDevTip", nil];
     
-    //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
