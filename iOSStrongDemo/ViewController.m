@@ -105,6 +105,11 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([value isEqualToString:@"UIImage"]){
         GGImageViewController *vc = [[GGImageViewController alloc] init];
+        self.navigationItem.title = @"";
+//        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+
+        [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+//        self.navigationController.navigationBar.translucent = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     

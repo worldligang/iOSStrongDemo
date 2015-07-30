@@ -7,8 +7,9 @@
 //
 
 #import "GGImageViewController.h"
+#define SCREEN [UIScreen mainScreen].bounds.size
 
-@interface GGImageViewController ()
+@interface GGImageViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -18,15 +19,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    
+    self.title = @"iOS开发：iOSDevTip";
+
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImage *image = [UIImage imageNamed:@"test.jpg"];
-    NSData *data = UIImageJPEGRepresentation(image, 1.0);
-//    image = [self imageCompressWithSimple:image scaledToSize:CGSizeMake(200, 200)];
+//    UIImage *image = [UIImage imageNamed:@"test.jpg"];
+//    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+////    image = [self imageCompressWithSimple:image scaledToSize:CGSizeMake(200, 200)];
+////    data = UIImageJPEGRepresentation(image, 1.0);
+//    image = [self imageCompressWithSimple:image scale:0.5];
 //    data = UIImageJPEGRepresentation(image, 1.0);
-    image = [self imageCompressWithSimple:image scale:0.5];
-    data = UIImageJPEGRepresentation(image, 1.0);
     
+}
+
+- (void)back:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(UIImage *) imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth
