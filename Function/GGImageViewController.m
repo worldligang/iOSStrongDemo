@@ -18,16 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
-//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
-    
-    self.title = @"iOS开发：iOSDevTip";
 
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    UIImage *image = [UIImage imageNamed:@"test.jpg"];
@@ -39,10 +30,6 @@
     
 }
 
-- (void)back:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 -(UIImage *) imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth
 {

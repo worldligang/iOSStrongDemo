@@ -11,8 +11,10 @@
 		CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */; };
 		CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */; };
 		CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */; };
+		CE4D64E01B6F9C90001A07CF /* GGAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D64DF1B6F9C90001A07CF /* GGAlbumViewController.m */; };
 		CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */; };
 		CE502E2C1B623C50006D19D1 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */; };
+		CEAA94DA1B6CF40200CA6605 /* GGNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA94D91B6CF40200CA6605 /* GGNavigationViewController.m */; };
 		CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1679A1B5120320088F8A3 /* NSStringViewController.m */; };
 		CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */; };
 		CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77E81B4EC18C0075C1F2 /* main.m */; };
@@ -51,10 +53,14 @@
 		CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDataDetectorTypesViewController.m; sourceTree = "<group>"; };
 		CE4859CF1B65D2630096C1F1 /* GGAutoSimplingShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAutoSimplingShowView.h; sourceTree = "<group>"; };
 		CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAutoSimplingShowView.m; sourceTree = "<group>"; };
+		CE4D64DE1B6F9C90001A07CF /* GGAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAlbumViewController.h; sourceTree = "<group>"; };
+		CE4D64DF1B6F9C90001A07CF /* GGAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAlbumViewController.m; sourceTree = "<group>"; };
 		CE502E271B623B6E006D19D1 /* GGCropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCropImageViewController.h; sourceTree = "<group>"; };
 		CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCropImageViewController.m; sourceTree = "<group>"; };
 		CE502E2A1B623C50006D19D1 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
 		CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		CEAA94D81B6CF40200CA6605 /* GGNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationViewController.h; sourceTree = "<group>"; };
+		CEAA94D91B6CF40200CA6605 /* GGNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationViewController.m; sourceTree = "<group>"; };
 		CEC167991B5120320088F8A3 /* NSStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
 		CEC1679A1B5120320088F8A3 /* NSStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
 		CEFD4B511B67BD4D00402B1A /* GGImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGImageViewController.h; sourceTree = "<group>"; };
@@ -119,6 +125,15 @@
 			name = NSTimer;
 			sourceTree = "<group>";
 		};
+		CE4D64DD1B6F9C60001A07CF /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D64DE1B6F9C90001A07CF /* GGAlbumViewController.h */,
+				CE4D64DF1B6F9C90001A07CF /* GGAlbumViewController.m */,
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
 		CE502E261B623B3E006D19D1 /* CropImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +145,15 @@
 				CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */,
 			);
 			name = CropImage;
+			sourceTree = "<group>";
+		};
+		CEAA94D71B6CF3B900CA6605 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA94D81B6CF40200CA6605 /* GGNavigationViewController.h */,
+				CEAA94D91B6CF40200CA6605 /* GGNavigationViewController.m */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 		CEC1679C1B51203A0088F8A3 /* NSString */ = {
@@ -236,6 +260,8 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D64DD1B6F9C60001A07CF /* Album */,
+				CEAA94D71B6CF3B900CA6605 /* Navigation */,
 				CEFD4B501B67BCBC00402B1A /* UIImage */,
 				CE502E261B623B3E006D19D1 /* CropImage */,
 				CE04503A1B5EABCB0031899F /* SandBox */,
@@ -373,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAA94DA1B6CF40200CA6605 /* GGNavigationViewController.m in Sources */,
 				CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */,
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
 				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
@@ -382,6 +409,7 @@
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
 				CEFF78211B4EC5790075C1F2 /* UIWebViewViewController.m in Sources */,
 				CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */,
+				CE4D64E01B6F9C90001A07CF /* GGAlbumViewController.m in Sources */,
 				CE502E2C1B623C50006D19D1 /* UIImage+Crop.m in Sources */,
 				CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */,
 				CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */,
