@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */; };
+		CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05F4E01B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */; };
 		CE2A58391B4ECB3100B15630 /* UIDataDetectorTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A58381B4ECB3100B15630 /* UIDataDetectorTypesViewController.m */; };
 		CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4859D01B65D2630096C1F1 /* GGAutoSimplingShowView.m */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		CE04503B1B5EAC470031899F /* GGSandBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSandBoxViewController.h; sourceTree = "<group>"; };
 		CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSandBoxViewController.m; sourceTree = "<group>"; };
+		CE05F4DF1B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		CE05F4E01B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		CE1A2C3B1B5004E8006F901C /* NSTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		CE1A2C3C1B5004E8006F901C /* NSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		CE2A58371B4ECB3100B15630 /* UIDataDetectorTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataDetectorTypesViewController.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		CE4D64DD1B6F9C60001A07CF /* Album */ = {
 			isa = PBXGroup;
 			children = (
+				CE05F4DF1B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				CE05F4E01B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m */,
 				CE4D64DE1B6F9C90001A07CF /* GGAlbumViewController.h */,
 				CE4D64DF1B6F9C90001A07CF /* GGAlbumViewController.m */,
 			);
@@ -404,6 +409,7 @@
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
 				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
 				CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */,
+				CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
 				CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */,
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
