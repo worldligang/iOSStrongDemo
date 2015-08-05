@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>45BE530D90C8D7FC1D5C840990D798134C11B22C</key>
-		<string>https://github.com/worldligang/iOSStrongDemo.git</string>
+		<string>https://github.com/worldligang/iOSStrongDemo</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOSStrongDemo.xcodeproj/project.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/worldligang/iOSStrongDemo.git</string>
+	<string>https://github.com/worldligang/iOSStrongDemo</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

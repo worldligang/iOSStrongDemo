@@ -126,13 +126,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Function/GGAlbumViewController.m"
-            timestampString = "460389573.517985"
+            timestampString = "460444522.619396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "-savedLibrayImage:"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-saveToAlbumWithMetadata:imageData:customAlbumName:completionBlock:failureBlock:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[GGAlbumViewController savedLibrayImage:]_block_invoke"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/github/github/demo/iOSStrongDemo/Function/GGAlbumViewController.m"
+                  timestampString = "460444522.71458"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[GGAlbumViewController savedLibrayImage:]_block_invoke_2"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/github/github/demo/iOSStrongDemo/Function/GGAlbumViewController.m"
+                  timestampString = "460444522.714694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,11 +174,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Function/GGAlbumViewController.m"
-            timestampString = "460389573.517985"
+            timestampString = "460444522.619396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "-getGroup"
             landmarkType = "5">
          </BreakpointContent>
@@ -158,13 +190,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Function/GGAlbumViewController.m"
-            timestampString = "460389573.517985"
+            timestampString = "460444522.619396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
-            landmarkName = "-getGroup"
-            landmarkType = "5">
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "@implementation GGAlbumViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,13 +254,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Function/GGAlbumViewController.m"
-            timestampString = "460389605.730895"
+            timestampString = "460444522.619396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "-saveToAlbumWithMetadata:imageData:customAlbumName:completionBlock:failureBlock:"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "-createAlbum"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GGAlbumViewController saveToAlbumWithMetadata:imageData:customAlbumName:completionBlock:failureBlock:]"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/github/github/demo/iOSStrongDemo/Function/GGAlbumViewController.m"
+                  timestampString = "460444522.729714"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__104-[GGAlbumViewController saveToAlbumWithMetadata:imageData:customAlbumName:completionBlock:failureBlock:]_block_invoke"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/github/github/demo/iOSStrongDemo/Function/GGAlbumViewController.m"
+                  timestampString = "460444522.729865"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,11 +302,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Function/GGAlbumViewController.m"
-            timestampString = "460389708.947717"
+            timestampString = "460444522.619396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "-createAlbum"
             landmarkType = "5">
          </BreakpointContent>

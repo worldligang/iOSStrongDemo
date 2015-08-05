@@ -48,6 +48,18 @@
     [self.view addSubview:buttonSaveAlbum];
 }
 
+- (void)letImageTogether
+{
+    UIImage *image1 = [UIImage imageNamed:@"iOSDevTip"];
+    UIImage *image2 = [UIImage imageNamed:@"iOSDevTip"];
+    CGSize size = CGSizeMake(image1.size.width + image2.size.width, image1.size.height);
+    UIGraphicsBeginImageContext(size);
+    [image1 drawInRect:CGRectMake(0, 0, image1.size.width, size.height)];
+    [image2 drawInRect:CGRectMake(image1.size.width, 0, image2.size.width, size.height)];
+    UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+}
+
 - (void)createAlbum:(UIButton *)button
 {
     ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
