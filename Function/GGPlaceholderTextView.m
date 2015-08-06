@@ -33,12 +33,14 @@
 
 -(void)addObserver
 {
+    //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEndEditing:) name:UITextViewTextDidEndEditingNotification object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(terminate:) name:UIApplicationWillTerminateNotification object:[UIApplication sharedApplication]];
 }
 
 - (void)terminate:(NSNotification *)notification {
+    //移除通知
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
