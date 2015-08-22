@@ -133,38 +133,6 @@
             endingLineNumber = "202"
             landmarkName = "-savedLibrayImage:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[GGAlbumViewController savedLibrayImage:]_block_invoke"
-                  moduleName = "iOSStrongDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ligang/blog/File/Demo/iOSStrongDemo/Function/GGAlbumViewController.m"
-                  timestampString = "460558546.017791"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "205"
-                  endingLineNumber = "205"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[GGAlbumViewController savedLibrayImage:]_block_invoke_2"
-                  moduleName = "iOSStrongDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ligang/blog/File/Demo/iOSStrongDemo/Function/GGAlbumViewController.m"
-                  timestampString = "460558546.01799"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "205"
-                  endingLineNumber = "205"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

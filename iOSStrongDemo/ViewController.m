@@ -19,6 +19,7 @@
 #import "GGNavigationViewController.h"
 #import "GGAlbumViewController.h"
 #import "GGtextViewViewController.h"
+#import "GGAccelerometerViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -121,6 +122,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([value isEqualToString:@"UITextView"]){
         GGtextViewViewController *vc = [[GGtextViewViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([value isEqualToString:@"Accelerometer"]){
+        GGAccelerometerViewController *vc = [[GGAccelerometerViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     
