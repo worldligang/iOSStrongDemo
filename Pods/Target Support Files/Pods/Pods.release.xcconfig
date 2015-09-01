@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Bugtags/" "$(PODS_ROOT)/Bugtags/"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bugtags"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bugtags"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "AVFoundation" -framework "Bugtags" -framework "CFNetwork" -framework "CoreLocation" -framework "ImageIO" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods

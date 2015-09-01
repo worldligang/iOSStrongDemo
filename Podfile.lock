@@ -1,0 +1,10 @@
+PODS:
+  - Bugtags (1.0.4)
+
+DEPENDENCIES:
+  - Bugtags
+
+SPEC CHECKSUMS:
+  Bugtags: 819313a921def3ff5c64be7074ba01601e8947a2
+
+COCOAPODS: 0.38.2
