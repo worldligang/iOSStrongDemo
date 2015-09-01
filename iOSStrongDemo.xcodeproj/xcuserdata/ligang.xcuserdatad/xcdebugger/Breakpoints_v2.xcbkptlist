@@ -356,5 +356,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSStrongDemo/ViewController.m"
+            timestampString = "462730759.895433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController scrollViewDidScroll:]"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/iOS/blog/File/Demo/iOSStrongDemo/iOSStrongDemo/ViewController.m"
+                  timestampString = "462728759.726047"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[ViewController scrollViewDidScroll:]_block_invoke81"
+                  moduleName = "iOSStrongDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ligang/iOS/blog/File/Demo/iOSStrongDemo/iOSStrongDemo/ViewController.m"
+                  timestampString = "462728759.726432"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

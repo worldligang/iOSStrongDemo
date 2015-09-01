@@ -26,6 +26,8 @@
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *mutArray;
+@property (nonatomic, strong) UIButton *bottomButton;
+@property (nonatomic, assign) CGFloat offsetY;
 
 @end
 
@@ -34,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -43,7 +45,10 @@
     [self.view addSubview:tableView];
     self.tableView = tableView;
 
-   
+    self.bottomButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height - 50, 50, 50);
+    [self.bottomButton setBackgroundImage:[UIImage imageNamed:@"bottom"] forState:UIControlStateNormal];
+    [self.view addSubview:self.bottomButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +56,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    //判断滑动到底部
+    if (scrollView.contentOffset.y == scrollView.contentSize.height - self.tableView.frame.size.height) {
+        [UIView transitionWithView:self.bottomButton duration:0.1 options:UIViewAnimationOptionTransitionNone animations:^{
+            self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height - 50, 50, 50);
+        } completion:NULL];
+    }
+    
+    if (scrollView.contentOffset.y > self.offsetY && scrollView.contentOffset.y > 0) {//如果当前位移大于缓存位移，说明scrollView向上滑动
+        [UIView transitionWithView:self.bottomButton duration:0.1 options:UIViewAnimationOptionTransitionNone animations:^{
+            self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height, 50, 50);
+        } completion:NULL];
+    }else if (scrollView.contentOffset.y < self.offsetY){
+        [UIView transitionWithView:self.bottomButton duration:0.1 options:UIViewAnimationOptionTransitionNone animations:^{
+            self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height - 50, 50, 50);
+        } completion:NULL];
+    }
+    self.offsetY = scrollView.contentOffset.y;//将当前位移变成缓存位移
+}
 
 
 #pragma mark UITableView datasource
