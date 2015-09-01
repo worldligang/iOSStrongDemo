@@ -27,8 +27,9 @@
     
     
     self.image = [UIImage imageNamed:@"iOSDevTip"];
+    UIImage *horizontalFlipImage = [UIImage imageWithCGImage:self.image.CGImage scale:1.0 orientation:UIImageOrientationUpMirrored];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN.width - 300) / 2, 70, 300, 150)];
-    imageView.image = self.image;
+    imageView.image = horizontalFlipImage;
     [self.view addSubview:imageView];
     
     UIButton *button = [[UIButton alloc] init];
