@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <Bugtags/Bugtags.h>
 
 @interface AppDelegate ()
 
@@ -64,6 +65,8 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventShake];
     
     return YES;
 }
