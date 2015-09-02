@@ -66,7 +66,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventShake];
+    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventBubble];
     
     return YES;
 }

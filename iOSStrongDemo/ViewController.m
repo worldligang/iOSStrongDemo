@@ -36,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -49,11 +49,22 @@
     self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height - 50, 50, 50);
     [self.bottomButton setBackgroundImage:[UIImage imageNamed:@"bottom"] forState:UIControlStateNormal];
     [self.view addSubview:self.bottomButton];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"这是一个闪退" style:UIBarButtonItemStylePlain target:self action:@selector(actionClick:)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - IBAction
+
+- (void)actionClick:(UIButton *)button
+{
+    NSArray *array = [NSArray arrayWithObjects:@"1", nil];
+    NSString *string = [array objectAtIndex:2];
+    NSLog(@"%@",string);
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
