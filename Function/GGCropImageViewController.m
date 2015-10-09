@@ -72,8 +72,8 @@
     self.tableView = tableView;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
-    UIImage *img = [UIImage imageNamed:@"some.png"];
-    NSData *dataObj = UIImageJPEGRepresentation(img, 1.0);
+//    UIImage *img = [UIImage imageNamed:@"some.png"];
+//    NSData *dataObj = UIImageJPEGRepresentation(img, 1.0);
 }
 
 - (void)actionClick:(UIButton *)button

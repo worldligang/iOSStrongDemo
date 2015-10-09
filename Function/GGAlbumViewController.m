@@ -57,7 +57,7 @@
     UIGraphicsBeginImageContext(size);
     [image1 drawInRect:CGRectMake(0, 0, image1.size.width, size.height)];
     [image2 drawInRect:CGRectMake(image1.size.width, 0, image2.size.width, size.height)];
-    UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 }
 
@@ -247,47 +247,47 @@
     
 }
 
-
-
--(void)getGroup
-{
-    @autoreleasepool
-    {
-        NSMutableArray *groupArray = [[NSMutableArray alloc] init];
-
-        ALAssetsLibraryAccessFailureBlock failureblock =
-        ^(NSError *myerror)
-        {
-            NSLog(@"相册访问失败 =%@", [myerror localizedDescription]);
-            if ([myerror.localizedDescription rangeOfString:@"Global denied access"].location!=NSNotFound) {
-                NSLog(@"无法访问相册.请在'设置->定位服务'设置为打开状态.");
-            }else{
-                NSLog(@"相册访问失败.");
-            }
-        };
-        
-        ALAssetsLibraryGroupsEnumerationResultsBlock
-        libraryGroupsEnumeration = ^(ALAssetsGroup* group,BOOL* stop)
-        {
-            if (group!=nil)
-            {
-                [groupArray addObject:group];
-            }
-            else
-            {
-//                if (!_groupTable)
-//                {
-//                    _groupTable = [[UITableView alloc] initWithFrame:EZRECT(0, 0, SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT - 44)
-//                                                               style:UITableViewStylePlain];
-//                    _groupTable.delegate = self;
-//                    _groupTable.dataSource = self;
-//                    [self.view addSubview:_groupTable];
-//                }
-//                [_groupTable performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-            }
-        };
-    }
-}
+//
+//
+//-(void)getGroup
+//{
+//    @autoreleasepool
+//    {
+//        NSMutableArray *groupArray = [[NSMutableArray alloc] init];
+//
+//        ALAssetsLibraryAccessFailureBlock failureblock =
+//        ^(NSError *myerror)
+//        {
+//            NSLog(@"相册访问失败 =%@", [myerror localizedDescription]);
+//            if ([myerror.localizedDescription rangeOfString:@"Global denied access"].location!=NSNotFound) {
+//                NSLog(@"无法访问相册.请在'设置->定位服务'设置为打开状态.");
+//            }else{
+//                NSLog(@"相册访问失败.");
+//            }
+//        };
+//        
+//        ALAssetsLibraryGroupsEnumerationResultsBlock
+//        libraryGroupsEnumeration = ^(ALAssetsGroup* group,BOOL* stop)
+//        {
+//            if (group!=nil)
+//            {
+//                [groupArray addObject:group];
+//            }
+//            else
+//            {
+////                if (!_groupTable)
+////                {
+////                    _groupTable = [[UITableView alloc] initWithFrame:EZRECT(0, 0, SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT - 44)
+////                                                               style:UITableViewStylePlain];
+////                    _groupTable.delegate = self;
+////                    _groupTable.dataSource = self;
+////                    [self.view addSubview:_groupTable];
+////                }
+////                [_groupTable performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+//            }
+//        };
+//    }
+//}
 
 - (void)actionClick:(UIButton *)button
 {
