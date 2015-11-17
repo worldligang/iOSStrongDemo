@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <Bugtags/Bugtags.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface AppDelegate ()
 
@@ -66,9 +67,86 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventBubble];
+    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventShake];
+    
+    
+    //接受按钮
+    UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
+    acceptAction.identifier = @"acceptAction";
+    acceptAction.title = @"接受";
+    acceptAction.activationMode = UIUserNotificationActivationModeForeground;
+    //拒绝按钮
+    UIMutableUserNotificationAction *rejectAction = [[UIMutableUserNotificationAction alloc] init];
+    rejectAction.identifier = @"rejectAction";
+    rejectAction.title = @"拒绝";
+    rejectAction.activationMode = UIUserNotificationActivationModeBackground;
+    rejectAction.authenticationRequired = YES;//需要解锁才能处理，如果action.activationMode = UIUserNotificationActivationModeForeground;则这个属性被忽略；
+    rejectAction.destructive = YES;
+    
+    UIMutableUserNotificationCategory *categorys = [[UIMutableUserNotificationCategory alloc] init];
+    categorys.identifier = @"alert";
+    NSArray *actions = @[acceptAction, rejectAction];
+    [categorys setActions:actions forContext:UIUserNotificationActionContextMinimal];
+    
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound) categories:[NSSet setWithObjects:categorys, nil]];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    
+    
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    notification.alertBody = @"测试推送的快捷回复";
+    notification.category = @"alert";
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    
+    
+    
+//    [self doSomeAuth];
     
     return YES;
+}
+
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    NSLog(@"%@", notificationSettings);
+}
+
+-(void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler
+{
+    //在非本App界面时收到本地消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮，notification为消息内容
+    NSLog(@"%@----%@",identifier,notification);
+    //处理完消息，最后一定要调用这个代码块
+    completionHandler();
+}
+
+- (void)doSomeAuth
+{
+    LAContext *myContext = [[LAContext alloc] init];
+    myContext.localizedFallbackTitle = @"支付宝的 Touch ID";
+    NSError *authError = nil;
+    NSString *myLocalizedReasonString = @"通过Home键验证已有手机指纹";
+    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError])
+    {
+        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                  localizedReason:myLocalizedReasonString
+                            reply:^(BOOL success, NSError *error) {
+                                if(success)
+                                {
+                                    //处理验证通过
+                                }
+                                else
+                                {
+                                    //处理验证失败
+                                }
+                            }];
+    }
+    else
+    {
+        //不支持Touch ID验证，提示用户
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -22,7 +22,8 @@
 //    UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
 //    accelerometer.delegate = self;
 //    accelerometer.updateInterval = 0.1;
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+
     CMMotionManager *motionManager = [[CMMotionManager alloc] init];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     //加速计
