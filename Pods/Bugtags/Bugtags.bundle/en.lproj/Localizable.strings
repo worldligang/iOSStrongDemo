@@ -29,6 +29,7 @@
 "btg_info_tag_info" = "Tag info";
 "btg_info_tag_input_placeholder" = "issue description";
 "btg_info_discard_report" = "Sure to discard?";
+"btg_info_start_trace" = "Sure to restart trace?";
 "btg_info_signin_loading" = "Sign in...";
 "btg_info_signin_failed" = "Account or\npassword error";
 "btg_info_signin_captcha_invalid" = "Invalid captcha";

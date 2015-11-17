@@ -29,6 +29,7 @@
 "btg_info_tag_info" = "標籤信息";
 "btg_info_tag_input_placeholder" = "問題描述";
 "btg_info_discard_report" = "確定要放棄提交嗎？";
+"btg_info_start_trace" = "確定從現在開始記錄數據嗎？";
 "btg_info_signin_loading" = "正在登錄...";
 "btg_info_signin_failed" = "帳號或密碼錯誤";
 "btg_info_signin_captcha_invalid" = "驗證碼有誤";

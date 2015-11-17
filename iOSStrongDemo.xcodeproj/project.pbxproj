@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B4575AA9591CC81563B1E5CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAA7C6A48320894FB7EDAF /* libPods.a */; };
+		CB5BF7C31BFB3FC8003A2B72 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB5BF7C21BFB3FC8003A2B72 /* test.mp4 */; };
+		CB5BF7CA1BFB3FCF003A2B72 /* ControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C51BFB3FCF003A2B72 /* ControllerView.m */; };
+		CB5BF7CB1BFB3FCF003A2B72 /* LGPlayMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C71BFB3FCF003A2B72 /* LGPlayMediaView.m */; };
+		CB5BF7CC1BFB3FCF003A2B72 /* MediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C91BFB3FCF003A2B72 /* MediaPlayer.m */; };
 		CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */; };
 		CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05F4E01B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		CE0FFA361B7384290004310B /* GGtextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FFA351B7384290004310B /* GGtextViewViewController.m */; };
@@ -17,7 +21,7 @@
 		CE4D64E01B6F9C90001A07CF /* GGAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D64DF1B6F9C90001A07CF /* GGAlbumViewController.m */; };
 		CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E281B623B6E006D19D1 /* GGCropImageViewController.m */; };
 		CE502E2C1B623C50006D19D1 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = CE502E2B1B623C50006D19D1 /* UIImage+Crop.m */; };
-		CE7E1CB81BC7A8E6003948FD /* GGEdgesForExtendedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1CB71BC7A8E6003948FD /* GGEdgesForExtendedLayoutViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CE7E1CB81BC7A8E6003948FD /* GGEdgesForExtendedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1CB71BC7A8E6003948FD /* GGEdgesForExtendedLayoutViewController.m */; };
 		CE8904C31B7790AA00123B5B /* GGAccelerometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8904C21B7790AA00123B5B /* GGAccelerometerViewController.m */; };
 		CEAA94DA1B6CF40200CA6605 /* GGNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA94D91B6CF40200CA6605 /* GGNavigationViewController.m */; };
 		CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1679A1B5120320088F8A3 /* NSStringViewController.m */; };
@@ -53,6 +57,13 @@
 /* Begin PBXFileReference section */
 		1F0F4BDDF5DA6A0D14D31BB2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		56B7D1408792D16430A8B964 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CB5BF7C21BFB3FC8003A2B72 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		CB5BF7C41BFB3FCF003A2B72 /* ControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerView.h; sourceTree = "<group>"; };
+		CB5BF7C51BFB3FCF003A2B72 /* ControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerView.m; sourceTree = "<group>"; };
+		CB5BF7C61BFB3FCF003A2B72 /* LGPlayMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPlayMediaView.h; sourceTree = "<group>"; };
+		CB5BF7C71BFB3FCF003A2B72 /* LGPlayMediaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPlayMediaView.m; sourceTree = "<group>"; };
+		CB5BF7C81BFB3FCF003A2B72 /* MediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
+		CB5BF7C91BFB3FCF003A2B72 /* MediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlayer.m; sourceTree = "<group>"; };
 		CDFAA7C6A48320894FB7EDAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE04503B1B5EAC470031899F /* GGSandBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSandBoxViewController.h; sourceTree = "<group>"; };
 		CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSandBoxViewController.m; sourceTree = "<group>"; };
@@ -142,6 +153,20 @@
 				CDFAA7C6A48320894FB7EDAF /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB5BF7C11BFB3FAF003A2B72 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				CB5BF7C41BFB3FCF003A2B72 /* ControllerView.h */,
+				CB5BF7C51BFB3FCF003A2B72 /* ControllerView.m */,
+				CB5BF7C61BFB3FCF003A2B72 /* LGPlayMediaView.h */,
+				CB5BF7C71BFB3FCF003A2B72 /* LGPlayMediaView.m */,
+				CB5BF7C81BFB3FCF003A2B72 /* MediaPlayer.h */,
+				CB5BF7C91BFB3FCF003A2B72 /* MediaPlayer.m */,
+				CB5BF7C21BFB3FC8003A2B72 /* test.mp4 */,
+			);
+			name = Video;
 			sourceTree = "<group>";
 		};
 		CE04503A1B5EABCB0031899F /* SandBox */ = {
@@ -330,6 +355,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CB5BF7C11BFB3FAF003A2B72 /* Video */,
 				CE7E1CB51BC7A8C9003948FD /* EdgesForExtendedLayout */,
 				CE8904C01B77907900123B5B /* Accelerometer */,
 				CE0FFA301B7383F10004310B /* UITextView */,
@@ -376,6 +402,7 @@
 				CEFF77E01B4EC18C0075C1F2 /* Frameworks */,
 				CEFF77E11B4EC18C0075C1F2 /* Resources */,
 				086CEDEB4E9F53EC16EA7B03 /* Copy Pods Resources */,
+				E16CDE6646C6D6C93667E1A5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,7 +442,7 @@
 				TargetAttributes = {
 					CEFF77E21B4EC18C0075C1F2 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = AB8LD2BXCQ;
+						DevelopmentTeam = TJ52AJ6R35;
 					};
 					CEFF77FB1B4EC18C0075C1F2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -456,6 +483,7 @@
 				CEFF781B1B4EC34C0075C1F2 /* jquery-2.js in Resources */,
 				CEFF781D1B4EC34C0075C1F2 /* style.css in Resources */,
 				CEFF77F41B4EC18C0075C1F2 /* Images.xcassets in Resources */,
+				CB5BF7C31BFB3FC8003A2B72 /* test.mp4 in Resources */,
 				CEFF78181B4EC34C0075C1F2 /* 17854572.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +528,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E16CDE6646C6D6C93667E1A5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -511,8 +554,10 @@
 				CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */,
 				CE0FFA361B7384290004310B /* GGtextViewViewController.m in Sources */,
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
+				CB5BF7CB1BFB3FCF003A2B72 /* LGPlayMediaView.m in Sources */,
 				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
 				CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */,
+				CB5BF7CA1BFB3FCF003A2B72 /* ControllerView.m in Sources */,
 				CE8904C31B7790AA00123B5B /* GGAccelerometerViewController.m in Sources */,
 				CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
@@ -522,6 +567,7 @@
 				CEFF78211B4EC5790075C1F2 /* UIWebViewViewController.m in Sources */,
 				CE1A2C3D1B5004E8006F901C /* NSTimerViewController.m in Sources */,
 				CE4D64E01B6F9C90001A07CF /* GGAlbumViewController.m in Sources */,
+				CB5BF7CC1BFB3FCF003A2B72 /* MediaPlayer.m in Sources */,
 				CEC3EC161B738A8100D2ED25 /* GGPlaceholderTextView.m in Sources */,
 				CE502E2C1B623C50006D19D1 /* UIImage+Crop.m in Sources */,
 				CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */,

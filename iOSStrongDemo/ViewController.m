@@ -21,6 +21,8 @@
 #import "GGtextViewViewController.h"
 #import "GGAccelerometerViewController.h"
 #import "GGEdgesForExtendedLayoutViewController.h"
+#import "MediaPlayer.h"
+#import <CoreMedia/CoreMedia.h>
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -37,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"Video",@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -45,7 +47,7 @@
     tableView.delegate = self;
     [self.view addSubview:tableView];
     self.tableView = tableView;
-
+    
     self.bottomButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.bottomButton.frame = CGRectMake(SCREEN.width / 2 - 25, SCREEN.height - 50, 50, 50);
     [self.bottomButton setBackgroundImage:[UIImage imageNamed:@"bottom"] forState:UIControlStateNormal];
@@ -190,6 +192,13 @@
     }else if ([value isEqualToString:@"EdgesForExtendedLayout"]){
         GGEdgesForExtendedLayoutViewController *vc = [[GGEdgesForExtendedLayoutViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if ([value isEqualToString:@"Video"]){
+        
+        MediaPlayer *player = [[MediaPlayer alloc]init];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"mp4"];
+        //        player.urlString = @"http://cc.a.yximgs.com/upic/2015/05/19/12/BMjAxNTA1MTkxMjQzMjNfODI1NDU4OF8yMjk3MDM0OTJfM8z.mp4";
+        player.urlString = path;
+        [self.navigationController pushViewController:player animated:YES];
     }
     
 }

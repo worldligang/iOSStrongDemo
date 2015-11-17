@@ -29,6 +29,7 @@
 "btg_info_tag_info" = "标签信息";
 "btg_info_tag_input_placeholder" = "问题描述";
 "btg_info_discard_report" = "确定要放弃提交吗？";
+"btg_info_start_trace" = "确定从现在开始记录数据吗？";
 "btg_info_signin_loading" = "正在登录...";
 "btg_info_signin_failed" = "帐号或密码错误";
 "btg_info_signin_captcha_invalid" = "验证码有误";
