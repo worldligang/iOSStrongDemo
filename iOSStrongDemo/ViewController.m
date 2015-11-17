@@ -196,8 +196,10 @@
         
         MediaPlayer *player = [[MediaPlayer alloc]init];
         NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"mp4"];
-        //        player.urlString = @"http://cc.a.yximgs.com/upic/2015/05/19/12/BMjAxNTA1MTkxMjQzMjNfODI1NDU4OF8yMjk3MDM0OTJfM8z.mp4";
+        player.isLocal = YES;
         player.urlString = path;
+//        player.urlString = @"http://cc.a.yximgs.com/upic/2015/05/19/12/BMjAxNTA1MTkxMjQzMjNfODI1NDU4OF8yMjk3MDM0OTJfM8z.mp4";
+//        player.isLocal = NO;
         [self.navigationController pushViewController:player animated:YES];
     }
     

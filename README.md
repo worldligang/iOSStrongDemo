@@ -3,6 +3,10 @@
 iOSStrongDemo是由[@李刚](http://weibo.com/1858520423/profile?topnav=1&wvr=6)维护，总结一些iOS开发精选知识点。每一个知识点都有相应的测试代码，非常适合iOS初学者。
 
 ##涉及功能点
+* iOS视频播放器
+
+![gif](https://github.com/worldligang/iOSStrongDemo/blob/master/Source/video.gif)
+
 * [UIWebView用法详解及代码分享](http://www.superqq.com/blog/2015/07/08/uiwebviewyong-fa-xiang-jie/)
 * [使用UIDataDetectorTypes自动检测电话、网址和邮箱](http://www.superqq.com/blog/2015/07/09/shi-yong-uidatadetectortypeszi-dong-jian-ce-dian-hua-,-wang-zhi-he-you-xiang/)
 * [iOS开发之NSTimer使用初探](http://www.superqq.com/blog/2015/07/10/ioskai-fa-zhi-nstimershi-yong-chu-tan/) 

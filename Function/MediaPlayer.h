@@ -19,5 +19,5 @@
 
 @property (strong, nonatomic) NSString *shareUrlString;
 @property (strong, nonatomic) NSString *sharePictureUrlString;
-
+@property (assign, nonatomic) BOOL isLocal;
 @end

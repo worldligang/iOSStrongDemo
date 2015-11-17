@@ -89,9 +89,9 @@ static MPMoviePlayerController *cbberPlayerController = nil;
 }
 
 //初始化视频
-- (void)startPlayback:(NSString *)path
+- (void)startPlayback:(NSURL *)path
 {
-    [[LGPlayMediaView sharedManager] setContentURL:[NSURL fileURLWithPath:path]];
+    [[LGPlayMediaView sharedManager] setContentURL:path];
     [[LGPlayMediaView sharedManager] play];
 }
 @end

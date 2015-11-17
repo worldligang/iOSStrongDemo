@@ -16,7 +16,7 @@
 - (id)initPlayer;
 
 
-- (void)startPlayback:(NSString *)path;
+- (void)startPlayback:(NSURL *)path;
 
 + (MPMoviePlayerController *)sharedManager;
 

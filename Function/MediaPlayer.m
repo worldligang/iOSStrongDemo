@@ -47,6 +47,7 @@
 
 @property (weak, nonatomic) UIAlertView *noInternetAlert;
 
+
 @end
 
 @implementation MediaPlayer
@@ -186,7 +187,13 @@
     /*
      * 播放
      */
-    [playView startPlayback:_urlString];
+    NSURL *url;
+    if (self.isLocal) {
+        url = [NSURL fileURLWithPath:_urlString];
+    }else{
+        url = [NSURL URLWithString:_urlString];
+    }
+    [playView startPlayback:url];
     
 #pragma mark - 缓冲
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
