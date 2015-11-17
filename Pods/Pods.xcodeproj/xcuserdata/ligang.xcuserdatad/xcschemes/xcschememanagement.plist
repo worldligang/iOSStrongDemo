@@ -8,8 +8,11 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< 5632fa5a7954c4699065b9b5c43f10073746ac89
 			<key>orderHint</key>
 			<integer>1</integer>
+=======
+>>>>>>> test
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -53,7 +53,7 @@
     [self.bottomButton setBackgroundImage:[UIImage imageNamed:@"bottom"] forState:UIControlStateNormal];
     [self.view addSubview:self.bottomButton];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"这是一个闪退" style:UIBarButtonItemStylePlain target:self action:@selector(actionClick:)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"这是一个闪退" style:UIBarButtonItemStylePlain target:self action:@selector(actionClick:)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
