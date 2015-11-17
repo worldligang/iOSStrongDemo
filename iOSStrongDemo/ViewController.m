@@ -23,6 +23,7 @@
 #import "GGEdgesForExtendedLayoutViewController.h"
 #import "MediaPlayer.h"
 #import <CoreMedia/CoreMedia.h>
+#import "MDSegmentNavBarViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -39,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"Video",@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"SegBar",@"Video",@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -201,6 +202,9 @@
 //        player.urlString = @"http://cc.a.yximgs.com/upic/2015/05/19/12/BMjAxNTA1MTkxMjQzMjNfODI1NDU4OF8yMjk3MDM0OTJfM8z.mp4";
 //        player.isLocal = NO;
         [self.navigationController pushViewController:player animated:YES];
+    }else if ([value isEqualToString:@"SegBar"]){
+        MDSegmentNavBarViewController *vc = [[MDSegmentNavBarViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }

@@ -26,6 +26,7 @@
 		CEAA94DA1B6CF40200CA6605 /* GGNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA94D91B6CF40200CA6605 /* GGNavigationViewController.m */; };
 		CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1679A1B5120320088F8A3 /* NSStringViewController.m */; };
 		CEC3EC161B738A8100D2ED25 /* GGPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3EC151B738A8100D2ED25 /* GGPlaceholderTextView.m */; };
+		CECAD0EB1BFB7C5B00F099B0 /* MDSegmentNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECAD0EA1BFB7C5B00F099B0 /* MDSegmentNavBarViewController.m */; };
 		CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */; };
 		CEFF77E91B4EC18C0075C1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77E81B4EC18C0075C1F2 /* main.m */; };
 		CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF77EB1B4EC18C0075C1F2 /* AppDelegate.m */; };
@@ -93,6 +94,8 @@
 		CEC1679A1B5120320088F8A3 /* NSStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
 		CEC3EC141B738A8100D2ED25 /* GGPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPlaceholderTextView.h; sourceTree = "<group>"; };
 		CEC3EC151B738A8100D2ED25 /* GGPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPlaceholderTextView.m; sourceTree = "<group>"; };
+		CECAD0E91BFB7C5B00F099B0 /* MDSegmentNavBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSegmentNavBarViewController.h; sourceTree = "<group>"; };
+		CECAD0EA1BFB7C5B00F099B0 /* MDSegmentNavBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSegmentNavBarViewController.m; sourceTree = "<group>"; };
 		CEFD4B511B67BD4D00402B1A /* GGImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGImageViewController.h; sourceTree = "<group>"; };
 		CEFD4B521B67BD4D00402B1A /* GGImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGImageViewController.m; sourceTree = "<group>"; };
 		CEFF77E31B4EC18C0075C1F2 /* iOSStrongDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStrongDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +261,15 @@
 			name = NSString;
 			sourceTree = "<group>";
 		};
+		CECAD0E81BFB7C4700F099B0 /* SegNav */ = {
+			isa = PBXGroup;
+			children = (
+				CECAD0E91BFB7C5B00F099B0 /* MDSegmentNavBarViewController.h */,
+				CECAD0EA1BFB7C5B00F099B0 /* MDSegmentNavBarViewController.m */,
+			);
+			name = SegNav;
+			sourceTree = "<group>";
+		};
 		CEFD4B501B67BCBC00402B1A /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +367,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CECAD0E81BFB7C4700F099B0 /* SegNav */,
 				CB5BF7C11BFB3FAF003A2B72 /* Video */,
 				CE7E1CB51BC7A8C9003948FD /* EdgesForExtendedLayout */,
 				CE8904C01B77907900123B5B /* Accelerometer */,
@@ -402,7 +415,6 @@
 				CEFF77E01B4EC18C0075C1F2 /* Frameworks */,
 				CEFF77E11B4EC18C0075C1F2 /* Resources */,
 				086CEDEB4E9F53EC16EA7B03 /* Copy Pods Resources */,
-				E16CDE6646C6D6C93667E1A5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -528,21 +540,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E16CDE6646C6D6C93667E1A5 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -558,6 +555,7 @@
 				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
 				CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */,
 				CB5BF7CA1BFB3FCF003A2B72 /* ControllerView.m in Sources */,
+				CECAD0EB1BFB7C5B00F099B0 /* MDSegmentNavBarViewController.m in Sources */,
 				CE8904C31B7790AA00123B5B /* GGAccelerometerViewController.m in Sources */,
 				CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
