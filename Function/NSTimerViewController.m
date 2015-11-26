@@ -18,7 +18,9 @@
 
 @end
 
-@implementation NSTimerViewController
+@implementation NSTimerViewController {
+    NSTimer *_timer;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,10 +42,14 @@
     [self.view addSubview:label];
     self.label = label;
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(actionTimer:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(actionTimer:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:UITrackingRunLoopMode];
 //    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     
+}
+
+- (void)viewWillDisappear:(BOOL)animatied {
+    [_timer invalidate];
 }
 
 - (void)actionTimer:(NSTimer *)timer
