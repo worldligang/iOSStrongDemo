@@ -161,10 +161,20 @@
         NSStringViewController *vc = [[NSStringViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([value isEqualToString:@"System Setting"]){
-        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+//        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+//        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+        NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
+        }else{
+            //                                                                  NSString *sss = UIApplicationOpenSettingsURLString;
+            NSURL *url2 = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            [[UIApplication sharedApplication] openURL:url2];
         }
+    
     } else if ([value isEqualToString:@"SandBox"]){
         GGSandBoxViewController *vc = [[GGSandBoxViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
