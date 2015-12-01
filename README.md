@@ -3,6 +3,10 @@
 iOSStrongDemo是由[@李刚](http://weibo.com/1858520423/profile?topnav=1&wvr=6)维护，总结一些iOS开发精选知识点。每一个知识点都有相应的测试代码，非常适合iOS初学者。
 
 ##涉及功能点
+
+
+
+* [iOS开发之如何跳到系统设置里的WiFi界面](http://www.superqq.com/blog/2015/11/30/jump-to-setting-wifi/)
 * iOS视频播放器
 
 ![gif](https://github.com/worldligang/iOSStrongDemo/blob/master/Source/video.gif)
