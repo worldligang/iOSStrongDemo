@@ -24,6 +24,8 @@
 #import "MediaPlayer.h"
 #import <CoreMedia/CoreMedia.h>
 #import "MDSegmentNavBarViewController.h"
+#import "UIButton+AFNetworking.h"
+#import "GGInterfaceOrientationViewController.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -40,7 +42,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mutArray = [NSMutableArray arrayWithObjects:@"SegBar",@"Video",@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
+    self.mutArray = [NSMutableArray arrayWithObjects:@"InterfaceOrientation",@"SegBar",@"Video",@"EdgesForExtendedLayout",@"Accelerometer",@"UITextView",@"Album",@"Navigation", @"UIImage", @"CropImage",@"SandBox",@"System Setting",@"NSString", @"NSTimer",@"UIDataDetectorTypes",@"UIWebView",@"tast",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test", nil];
     
     //用UITableView现实股票信息
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN.width, SCREEN.height) style:UITableViewStylePlain];
@@ -54,6 +56,7 @@
     [self.bottomButton setBackgroundImage:[UIImage imageNamed:@"bottom"] forState:UIControlStateNormal];
     [self.view addSubview:self.bottomButton];
     
+    [self.bottomButton setImageForState:UIControlStateNormal withURL:[NSURL URLWithString:@"http://beautymall.qiniudn.com/data/img/category/bk/yuike_waterfallv2_t2.png"]];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"这是一个闪退" style:UIBarButtonItemStylePlain target:self action:@selector(actionClick:)];
 }
 
@@ -166,15 +169,63 @@
 //            [[UIApplication sharedApplication] openURL:url];
 //        }
         
-        NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
-        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+//        else
+//        {
+//            NSURL *url2 = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+//            [[UIApplication sharedApplication] openURL:url2];
+//        }
+
+//        //墙纸设置界面
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=Wallpaper"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+//        //音乐设置界面
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=MUSIC"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+//        //iCloud设置界面
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=CASTLE"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+//        //FaceTime设置界面
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=FACETIME"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+//        //蓝牙设置界面
+//        NSURL *url = [NSURL URLWithString:@"prefs:root=Bluetooth"];
+//        if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+        
+        //定位服务设置界面
+        NSURL *url = [NSURL URLWithString:@"prefs:root=LOCATION_SERVICES"];
+        if ([[UIApplication sharedApplication] canOpenURL:url])
+        {
             [[UIApplication sharedApplication] openURL:url];
-        }else{
-            //                                                                  NSString *sss = UIApplicationOpenSettingsURLString;
-            NSURL *url2 = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-            [[UIApplication sharedApplication] openURL:url2];
         }
-    
+
+        
+        
+        
+        
     } else if ([value isEqualToString:@"SandBox"]){
         GGSandBoxViewController *vc = [[GGSandBoxViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
@@ -215,7 +266,11 @@
     }else if ([value isEqualToString:@"SegBar"]){
         MDSegmentNavBarViewController *vc = [[MDSegmentNavBarViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if ([value isEqualToString:@"InterfaceOrientation"]){
+        GGInterfaceOrientationViewController *vc = [[GGInterfaceOrientationViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
     
 }
 
@@ -223,5 +278,14 @@
 {
     return 50;
 }
+
+//
+//-(BOOL)shouldAutorotate{
+//    return YES;
+//}
+////支持的方向
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    return UIInterfaceOrientationMaskAllButUpsideDown;
+//}
 
 @end

@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import <Bugtags/Bugtags.h>
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "GGPublicNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -63,11 +64,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     ViewController *vc = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    GGPublicNavigationViewController *nav = [[GGPublicNavigationViewController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventShake];
+//    [Bugtags startWithAppKey:@"e69f2fcac16de5dd471916ab8279dd66" invocationEvent:BTGInvocationEventShake];
     
     
     //接受按钮

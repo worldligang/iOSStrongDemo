@@ -12,6 +12,8 @@
 		CB5BF7CA1BFB3FCF003A2B72 /* ControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C51BFB3FCF003A2B72 /* ControllerView.m */; };
 		CB5BF7CB1BFB3FCF003A2B72 /* LGPlayMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C71BFB3FCF003A2B72 /* LGPlayMediaView.m */; };
 		CB5BF7CC1BFB3FCF003A2B72 /* MediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BF7C91BFB3FCF003A2B72 /* MediaPlayer.m */; };
+		CE03B9E01C15C75300AE8D71 /* GGPublicNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03B9DF1C15C75300AE8D71 /* GGPublicNavigationViewController.m */; };
+		CE03B9E41C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03B9E31C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.m */; };
 		CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */; };
 		CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05F4E01B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		CE0FFA361B7384290004310B /* GGtextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FFA351B7384290004310B /* GGtextViewViewController.m */; };
@@ -66,6 +68,10 @@
 		CB5BF7C81BFB3FCF003A2B72 /* MediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
 		CB5BF7C91BFB3FCF003A2B72 /* MediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlayer.m; sourceTree = "<group>"; };
 		CDFAA7C6A48320894FB7EDAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE03B9DE1C15C75300AE8D71 /* GGPublicNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPublicNavigationViewController.h; sourceTree = "<group>"; };
+		CE03B9DF1C15C75300AE8D71 /* GGPublicNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPublicNavigationViewController.m; sourceTree = "<group>"; };
+		CE03B9E21C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGInterfaceOrientationViewController.h; sourceTree = "<group>"; };
+		CE03B9E31C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGInterfaceOrientationViewController.m; sourceTree = "<group>"; };
 		CE04503B1B5EAC470031899F /* GGSandBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSandBoxViewController.h; sourceTree = "<group>"; };
 		CE04503C1B5EAC470031899F /* GGSandBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSandBoxViewController.m; sourceTree = "<group>"; };
 		CE05F4DF1B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
@@ -170,6 +176,15 @@
 				CB5BF7C21BFB3FC8003A2B72 /* test.mp4 */,
 			);
 			name = Video;
+			sourceTree = "<group>";
+		};
+		CE03B9E11C15CB3600AE8D71 /* InterfaceOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				CE03B9E21C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.h */,
+				CE03B9E31C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.m */,
+			);
+			name = InterfaceOrientation;
 			sourceTree = "<group>";
 		};
 		CE04503A1B5EABCB0031899F /* SandBox */ = {
@@ -308,6 +323,8 @@
 				CEFF77EB1B4EC18C0075C1F2 /* AppDelegate.m */,
 				CEFF77ED1B4EC18C0075C1F2 /* ViewController.h */,
 				CEFF77EE1B4EC18C0075C1F2 /* ViewController.m */,
+				CE03B9DE1C15C75300AE8D71 /* GGPublicNavigationViewController.h */,
+				CE03B9DF1C15C75300AE8D71 /* GGPublicNavigationViewController.m */,
 				CEFF77F31B4EC18C0075C1F2 /* Images.xcassets */,
 				CEFF77F51B4EC18C0075C1F2 /* LaunchScreen.xib */,
 				CEFF77E61B4EC18C0075C1F2 /* Supporting Files */,
@@ -367,6 +384,7 @@
 		CEFF781E1B4EC3EA0075C1F2 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				CE03B9E11C15CB3600AE8D71 /* InterfaceOrientation */,
 				CECAD0E81BFB7C4700F099B0 /* SegNav */,
 				CB5BF7C11BFB3FAF003A2B72 /* Video */,
 				CE7E1CB51BC7A8C9003948FD /* EdgesForExtendedLayout */,
@@ -551,6 +569,7 @@
 				CE04503D1B5EAC470031899F /* GGSandBoxViewController.m in Sources */,
 				CE0FFA361B7384290004310B /* GGtextViewViewController.m in Sources */,
 				CEFF77EF1B4EC18C0075C1F2 /* ViewController.m in Sources */,
+				CE03B9E41C15CB5B00AE8D71 /* GGInterfaceOrientationViewController.m in Sources */,
 				CB5BF7CB1BFB3FCF003A2B72 /* LGPlayMediaView.m in Sources */,
 				CEFD4B531B67BD4D00402B1A /* GGImageViewController.m in Sources */,
 				CE502E291B623B6E006D19D1 /* GGCropImageViewController.m in Sources */,
@@ -560,6 +579,7 @@
 				CE05F4E11B70F187008D47EB /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				CEC1679B1B5120320088F8A3 /* NSStringViewController.m in Sources */,
 				CE7E1CB81BC7A8E6003948FD /* GGEdgesForExtendedLayoutViewController.m in Sources */,
+				CE03B9E01C15C75300AE8D71 /* GGPublicNavigationViewController.m in Sources */,
 				CE4859D11B65D2630096C1F1 /* GGAutoSimplingShowView.m in Sources */,
 				CEFF77EC1B4EC18C0075C1F2 /* AppDelegate.m in Sources */,
 				CEFF78211B4EC5790075C1F2 /* UIWebViewViewController.m in Sources */,
@@ -693,7 +713,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iOSStrongDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LiGang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -710,7 +730,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iOSStrongDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LiGang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
