@@ -5,7 +5,7 @@ iOSStrongDemo是由[@李刚](http://weibo.com/1858520423/profile?topnav=1&wvr=6)
 ##涉及功能点
 
 
-
+* [iOS9横竖屏设置的处理方法和实例讲解](http://www.superqq.com/blog/2015/12/07/ios9-interface-orientation/)
 * [iOS开发之如何跳到系统设置里的WiFi界面](http://www.superqq.com/blog/2015/11/30/jump-to-setting-wifi/)
 * iOS视频播放器
 
